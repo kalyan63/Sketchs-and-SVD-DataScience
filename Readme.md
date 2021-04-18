@@ -4,6 +4,6 @@
 
     >!['Error Graph'](q4.png)
 
-    >
+    > Here, I'm using 5 hash functiions so, m=k/5 
 
 2. **Result of Movie Rating prediction using K-Rank approximation** 
