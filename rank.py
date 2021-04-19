@@ -30,16 +30,17 @@ for i in range(len(Train)):
 
 #Finding K-rank approximation    
 U,Sig,V=la.svd(S)    
-U=U.T
 err=list()
-for k in range(5,20):
+for k in range(40,42):
     Trained_Matrix=Sig[0]*U[0].reshape(-1,1)@V[0].reshape(-1,1).T
     for i in range(1,k):
         Trained_Matrix+=Sig[i]*U[i].reshape(-1,1)@V[i].reshape(-1,1).T
-
-    #Find Error: 
+    Trained_Matrix=np.where(Trained_Matrix<0,0,Trained_Matrix)
+    Trained_Matrix=np.where(Trained_Matrix>5,5,Trained_Matrix)
+    # Find Error: 
     error=0
     for i in range(len(Test)):
-        error+=(R[int(Test[i,0]-1),int(movie_map[Test[i,1]])]-Trained_Matrix[int(Test[i,0]-1),int(movie_map[Test[i,1]])])
+        error+=(R[int(Test[i,0]-1),int(movie_map[Test[i,1]])]-Trained_Matrix[int(Test[i,0]-1),int(movie_map[Test[i,1]])])**2
     err.append(error)
-print(err)    
+
+print(err)  
