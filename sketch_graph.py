@@ -1,7 +1,7 @@
 from typing import Counter
 import matplotlib.pyplot as plt
 from numpy import random
-from Sketch_main import count_min,count_sketch,MG
+from sketch_models import count_min,count_sketch,MG
 random.seed(42)
 file=open('matlab/train.data','r')
 wordIDX=list()
