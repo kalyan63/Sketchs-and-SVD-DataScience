@@ -5,7 +5,7 @@
     > 'sketch_models.py'     contains code for all sketchs
     > 'question4.py'         contains code for ploting graph for all Sketchs
     > 'Rating_prediction.py' contains code for K-Rank approximation and plotting graph for the K-Rank with different k values
-    >'Rating_CurveFit.py'    contains code for Rating prediction using Curve fitting with average rating of User and     Movie as coordinates.
+    >'Rating_CurveFit.py'    contains code for Rating prediction using Curve fitting with average rating of User and Movie as coordinates.
 
 
 1. **Error Graph of Count Min, Count Sketch and Misra-Gries**
