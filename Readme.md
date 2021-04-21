@@ -4,11 +4,11 @@
 
     >!['Error Graph'](q4.png)
 
-    > Here, I'm using 5 hash functiions so, m=k/5 for Count min and Count Sketch
+    > Here, I'm using 5 hash functions so, m=k/5 for Count min and Count Sketch
 
     > From the graph we can see that for k=2000 (approx) CM and CS has very low error. 
     
-    >So for m=400 and d=5 CM and CS sketch has error less than 1%. 
+    > So for m=400 and d=5 CM and CS sketch has error less than 1%. 
     
     > For Misra-Gries for k=100 the error is less than 1%. 
 
@@ -16,3 +16,13 @@
     
 
 2. **Result of Movie Rating prediction using K-Rank approximation** 
+
+    > The graph of K vs Error using Low rank Approximation is: 
+
+    >!['SVD'](q5.png)
+
+    > The error using a baseline Implementation(Curve fitting) is: 
+
+        > The value of coefficients for curve fitting is: [0.36516845 0.64264228]
+        > The error for Baseline model is: 1162.0094467790977
+
